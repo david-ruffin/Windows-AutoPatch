@@ -11,6 +11,7 @@
 ## Why is this Useful?
 
 - **Automated Maintenance:** Ensures your system and applications are kept up to date without manual intervention.
+- **Comprehensive Updates:** Not only keeps Windows itself up to date, but also upgrades many third-party applications available through the Windows Package Manager (`winget`).
 - **No Forced Reboots:** Installs updates without automatically rebooting, so you maintain control over when reboots occur.
 - **Modern Compatibility:** Uses PowerShell and Windows-native tools, compatible with Windows 10, 11, and modern Windows Server versions.
 - **Best Practices:** Runs as SYSTEM with highest privileges for reliability, and stores scripts in a dedicated folder for easy management.
@@ -39,7 +40,7 @@
 - The script:
   - Ensures secure download protocols and trusted repositories.
   - Installs or updates the NuGet provider, PowerShell Gallery, and `winget` if needed.
-  - Upgrades all applications via `winget`.
+  - **Upgrades all applications available via `winget`, including many popular third-party apps (e.g., browsers, editors, utilities), in addition to Microsoft Store apps.**
   - Installs the `PSWindowsUpdate` module if missing.
   - Checks for and installs Windows Updates (without rebooting).
 
